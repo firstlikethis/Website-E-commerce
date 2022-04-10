@@ -1,0 +1,70 @@
+<?php
+    require('./includes/connect.php');
+    $db = new db;
+    $db->admin_empty();
+
+
+    if(isset($_POST['submit']))
+    {
+        $bank_acc = $_POST['bank_acc'];
+        $bank_name = $_POST['bank_name'];
+        $holder_name = $_POST['holder_name'];
+
+        $check = $db->select_where("tb_howtopayments","bank_acc = '$bank_acc'");
+        if($check->num_rows == 0)
+        {
+            $insert = $db->insert("tb_howtopayments","bank_acc,bank_name,holder_name","'$bank_acc','$bank_name','$holder_name'");
+            if($insert)
+            {
+                $db->alert("กรอกข้อมูลเสร็จสิ้น!");
+                $db->header("admin_payment.php");
+            }
+            else
+            {
+                $db->alert("เกิดข้อผิดพลาดในการกรอกข้อมูล!");
+                $db->header("add_payment.php");
+            }
+        }
+        else
+        {
+            $db->alert("ข้อมูลซ้ำ!");
+        }
+    }
+?>
+<?php include('./includes/h_admin.php');?>
+
+<body>
+
+    <div class="container">
+        <form action="" method="post">
+            <div style="margin: 20px auto; width:420px;" class="panel panel-primary">
+                <div class="panel-heading text-center">กรอกข้อมูลร้าน</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for="bank_acc">เลขที่บัญชี</label>
+                        <input type="text" id="bank_acc" name="bank_acc" required placeholder="เลขบัญชี"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="bank_name">ธนาคาร</label>
+                        <input type="text" id="bank_name" name="bank_name" required placeholder="ชื่อธนาคาร"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="holder_name">ชื่อเจ้าของบัญชี</label>
+                        <input type="text" id="holder_name" name="holder_name" required placeholder="ชื่อเจ้าของบัญชี"
+                            class="form-control">
+                    </div>
+                    <input type="submit" name="submit" class="btn btn-success btn-block"
+                        onclick="return confirm('คุณต้องการที่จะเพิ่มการชำระเงิน ใช่หรือไม่?'); " value="เพิ่มการชำระเงิน">
+                    <a href="admin_payment.php" class="btn btn-danger btn-block">กลับ</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

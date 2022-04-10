@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap');
+html,
+body {
+    background-image: url(https://cdn.wallpapersafari.com/94/69/0KzgYv.jpg);
+    font-family: 'Sarabun', sans-serif;
+}
+
+.container {
+    width: 95%;
+}
+
+
+/* Breadrumb */
+
+.breadcrumb {
+    background-color: #DD1A11;
+}
+
+.breadcrumb a {
+    color: white;
+}
+
+
+/* End Breadrumb */
+
+
+/* Start dropdown */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* End dropdown */
+
+
+/* Box panel color */
+
+.panel-primary .panel-heading {
+    color: #fff;
+    background-color: #636C9F;
+    border-color: #636C9F;
+}
+
+div {
+    display: block;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+
+/* End Box panel color */
+
+
+/* Start Button */
+
+.btn-primary {
+    color: #fff;
+    background-color: #66CCCC;
+    border-color: #66FFFF;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #F9C851;
+    border-color: #D39D1B;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #63EE8F;
+    border-color: #3AC713;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #E76B5A;
+    border-color: #C31C05;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #3EF8B0;
+    border-color: #98B8F3;
+}
+
+
+/* End Button */
+
+.form-control {
+    border-color: #FFFF;
+}
+
+.list-group {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  size: 10px;
+}
+.list-group * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.list-group li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0;
+}
+.list-group a {
+  padding: 0.5em 0;  
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.list-group a:before,
+.list-group a:after {
+  height: 5px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #9b59b6;
+  width: 0;
+}
+.list-group a:before {
+  top: 0;
+  left: 0;
+}
+.list-group a:after {
+  bottom: 0;
+  right: 0;
+}
+.list-group a:hover,
+.list-group .current a {
+  color: #0427F5;
+}
+.list-group a:hover:before,
+.list-group .current a:before,
+.list-group a:hover:after,
+.list-group .current a:after {
+  width: 100%;
+}

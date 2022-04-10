@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap');
+html,
+body {
+    background-image: url(https://cdn.wallpapersafari.com/94/69/0KzgYv.jpg);
+    font-family: 'Sarabun', sans-serif;
+}
+
+.container {
+    width: 95%;
+}
+
+
+/* Breadrumb */
+
+.breadcrumb {
+    background-color: #DD1A11;
+}
+
+.breadcrumb a {
+    color: white;
+}
+
+
+/* End Breadrumb */
+
+
+/* Start dropdown */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* End dropdown */
+
+
+/* Box panel color */
+
+.panel-primary .panel-heading {
+    color: #fff;
+    background-color: #636C9F;
+    border-color: #636C9F;
+}
+
+div {
+    display: block;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+
+/* End Box panel color */
+
+
+/* Start Button */
+
+.btn-primary {
+    color: #fff;
+    background-color: #66CCCC;
+    border-color: #66FFFF;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #F9C851;
+    border-color: #D39D1B;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #63EE8F;
+    border-color: #3AC713;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #E76B5A;
+    border-color: #C31C05;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #3EF8B0;
+    border-color: #98B8F3;
+}
+
+
+/* End Button */
+
+.form-control {
+    border-color: #FFFF;
+}
