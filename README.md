@@ -39,7 +39,7 @@
     - print receipt
     
 #### about:
-if you have any questions you can DM me on Contact me below. you can donate me a coffee if you want hehe
+if you have any questions you can DM me on Contact me below. you can donate me a coffee if you want hehe. <img width="30px" src="https://user-images.githubusercontent.com/69718787/162604753-478f60b7-6400-4216-8ab5-fa8f01189f5e.gif">
 
 ### Contact me:
 <img align="left" width="30px" src="https://user-images.githubusercontent.com/69718787/162602145-28b0c567-731e-4e53-8c1c-d27618a29adf.png">
